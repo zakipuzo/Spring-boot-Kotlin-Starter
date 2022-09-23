@@ -1,0 +1,26 @@
+GET http://localhost:8080/products/list HTTP/1.1
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080//products?skus=23,4567,8901,2345,67789  
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080//products/23
+Content-Type: application/json
+
+ 
+ 
+###
+
+POST http://localhost:8080//product 
+Content-Type: application/json
+
+{
+    "sku":"23",
+    "name":"test product",
+    "description": "test product description",
+    "price": 22.99
+}
